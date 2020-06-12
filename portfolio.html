@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;500;700;900&display=swap">
 </head>
 <body>
     <!--шапка сайта-->
-    <header>
-        <nav>
-            <a href="./index.html" class="logo"
-            ><span class="logo-web">Web</span> Studio</a
-            >
-            <ul class="site-nav list">
+    <header class="page-header">
+      <nav class="container main-nav">
+        <a href="./index.html" class="logo"
+        ><span class="logo-web">Web</span> Studio</a>
+        <ul class="site-nav list">
                 <li><a href="./index.html" class="link">Студиа</a></li>
                 <li><a href="portfolio.html" class="link current">Портфолио</a></li>
                 <li><a href="/" class="link">Контакты</a></li>
-            </ul>
-            <address>
+        </ul>
+        <address>
                 <ul class="address-nav list">
                   <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
                   <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
                 </ul>
-            </address>
-        </nav>
+        </address>
+      </nav>
     </header>
     <main>
         <!--блок фильтр-->
-        <div>
+        <div class="container">
             <ul class="list">
                 <li><button class="button primary" type="button">Все</button></li>
                 <li><button class="button primary" type="button">Веб-сайты</button></li>
@@ -39,8 +39,8 @@
             </ul>
         </div>
         <!--блок портфолио-->
-        <section>
-                <h1>Портфолио фирмы</h1>
+        <section class="container">
+                <h1 class="hidden">Портфолио фирмы</h1>
                 <ul class="portfolio list">
                     <li>
                         <a href="/" class="link">
@@ -148,7 +148,6 @@
                         <h2 class="portfolio-title">Growing Business</h2>
                         <p class="portfolio-description">Приложение</p>
                         <p class="portfolio-hover">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-                        <h2 class="portfolio-title">Growing Business</h2>
                         </a>
                     </li>            
                 </ul>

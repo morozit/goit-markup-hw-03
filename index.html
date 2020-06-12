@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -12,22 +13,20 @@
   </head>
   <body>
     <!--шапка сайта-->
-    <header>
-      <nav>
+    <header class="page-header">
+      <nav class="container main-nav">
         <a href="./index.html" class="logo"
           ><span class="logo-web">Web</span> Studio</a
         >
         <ul class="site-nav list">
-          <li><a href="/" class="link current">Студиа</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="/" class="link">Контакты</a></li>
+          <li class="item"><a href="/" class="link current">Студиа</a></li>
+          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li class="item"><a href="/" class="link">Контакты</a></li>
         </ul>
-      </nav>
-      <nav>
         <address>
           <ul class="address-nav list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </nav>
@@ -39,8 +38,8 @@
         <a href="/" class="button primary hero">Заказать услугу</a>
       </section>
       <!--блок особенности компании-->
-      <section class="section">
-        <h2 class="section-title">особенности компании</h2>
+      <section class="container section">
+        <h2 class="section-title hidden">особенности компании</h2>
         <ul class="list">
           <li>
             <a href="/">
@@ -105,7 +104,7 @@
         <img src="./images/line-hr.svg" alt="линия" width="1170" height="0" />
       </div>
       <!--блок чем занимаетса компания-->
-      <section class="section">
+      <section class="container section">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list">
           <li>
@@ -141,7 +140,7 @@
         </ul>
       </section>
       <!--блок Наша команда-->
-      <section class="section-team">
+      <section class="container section-team">
         <h2 class="section-title">Наша команда</h2>
         <ul class="list">
           <!--первый член команды-->
@@ -311,7 +310,7 @@
         </ul>
       </section>
       <!--блок постоянные клиенты-->
-      <section class="section">
+      <section class="container section">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="list">
           <li>

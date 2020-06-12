@@ -9,8 +9,7 @@
   --text-title-color: #212121;
   --primary-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
-
+  --primary-white-color:  #FFFFFF; 
 }
 
 body {
@@ -22,6 +21,35 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* Утиилиты */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+/* Page header */
+
+.page-header {
+}
+
+/* Main nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Logo */
@@ -45,8 +73,22 @@ body {
 
 /* Site nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* .site-nav .item + .item {
+  margin-left: 50px;
+}*/
+
 .site-nav .link,
 .address-nav .link {
+  display: block;
   color: var(--text-title-color);
   font-weight: 500;
   font-size: 14px;
@@ -70,11 +112,14 @@ body {
     color: var(--primary-text-color);
 }
 
-
-.list {
-    list-style: none;
+.address-nav {
+  display: flex;
+  margin-left: auto;
 }
 
+.address-nav .item:not(:last-child) {
+  margin-right: 31px;
+}
 /* hero */
 
 .hero-title {
@@ -137,7 +182,9 @@ body {
     text-align: center;
 }
 
-
+.hidden {
+  display: none;
+}
 
 
 
@@ -213,10 +260,11 @@ footer {
 
 /* Portfolio */
 
-.portfolio {
+/* .portfolio {
+
     background-color: #ffffff;
 
-}
+} */
 
 .portfolio-title {
     font-weight: 700;
