@@ -71,7 +71,7 @@ body {
   color: var(--accent-color);
 }
 
-/* Site nav */
+/*шапка сайта*/
 
 .site-nav {
   display: flex;
@@ -82,13 +82,20 @@ body {
   margin-right: 40px;
 }
 
-/* .site-nav .item + .item {
-  margin-left: 50px;
-}*/
+.address-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-nav .item:not(:last-child) {
+  margin-right: 31px;
+}
 
 .site-nav .link,
 .address-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-title-color);
   font-weight: 500;
   font-size: 14px;
@@ -112,15 +119,11 @@ body {
     color: var(--primary-text-color);
 }
 
-.address-nav {
-  display: flex;
-  margin-left: auto;
-}
-
-.address-nav .item:not(:last-child) {
-  margin-right: 31px;
-}
 /* hero */
+
+.hero {
+  text-align: center;
+}
 
 .hero-title {
     color: var(--text-title-color);
@@ -133,12 +136,17 @@ body {
     text-transform: uppercase;
 }
 
-.hero {
-    text-align: center;
-}
-
 /* Section */
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .section-title {
     color: var(--text-title-color);
     font-weight: 700;
@@ -194,9 +202,9 @@ body {
 
 /* team */
 
-.section-team {
+/*.section-team {
     background-color: #F5F4FA;
-}
+} */
 
 
 /* Button */
