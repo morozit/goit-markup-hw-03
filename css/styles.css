@@ -62,8 +62,9 @@ body {
 
 /* Page header */
 
+/*
 .page-header {
-}
+} */
 
 /* Main nav */
 
@@ -184,7 +185,6 @@ body {
 .feature-list {
     display: flex;
     justify-content: space-between;
-    /*align-items: stretch; */
     
 }
 
@@ -193,11 +193,19 @@ body {
 }
 
 .background-features {
-  background: var(--secondary-grey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondary-grey-color);
+  box-sizing: border-box;
   width: 270px;
   height: 120px;
+  border-radius: 4px;
+      
 }
 
+/* <div class="background-features"> */
 .features-title {
     color: var(--text-title-color);
     font-weight: 700;
@@ -274,6 +282,7 @@ body {
 .client-list .item:not(:last-child) {
   margin-right: 30px;
 }
+
 .frame {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
