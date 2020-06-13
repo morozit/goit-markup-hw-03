@@ -9,7 +9,8 @@
   --text-title-color: #212121;
   --primary-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-white-color:  #FFFFFF; 
+  --primary-white-color:  #FFFFFF;
+  --secondary-grey-color: #F5F4FA; 
 }
 
 body {
@@ -38,6 +39,15 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
+}
+
+ h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Page header */
@@ -97,7 +107,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-title-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -136,16 +146,19 @@ body {
     text-transform: uppercase;
 }
 
+
 /* Section */
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section.no-padding {
   padding-top: 0;
   padding-bottom: 0;
+  /* margin-top: 94px; */
+  margin-bottom: 94px;
 }
 .section-title {
     color: var(--text-title-color);
@@ -153,17 +166,50 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Features и Examples */
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: stretch; */
+    
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px; 
+}
+
+.background-features {
+  background: var(--secondary-grey-color);
+  width: 270px;
+  height: 120px;
 }
 
 .features-title {
     color: var(--text-title-color);
     font-weight: 700;
     line-height: 1.14;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
 }
 
 .features-description {
-    font-weight: 500;
+    font-weight: 400;
+    width: 270px;
   }
+
+.produce-list {
+  display: flex;
+  justify-content: space-between;
+}  
+
+.produce-list .item:not(:last-child) {
+  margin-right: 30px; 
+}
 
 .produce-title {
     font-weight: 700;
@@ -175,36 +221,60 @@ body {
     color: #FFFFFF;
 }
 
+/* team */
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produce-list .item:not(:last-child) {
+  margin-right: 30px; 
+}
+
 .team-title {
     color: var(--text-title-color);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
 }
 
 .team-description {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
 }
 
-.hidden {
-  display: none;
+.background-team {
+  background-color: var(--secondary-grey-color);
+} 
+
+.card {
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* постоянные клиенты */
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list .item:not(:last-child) {
+  margin-right: 30px; 
+}
+.frame {
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
 }
 
 
 
 
-/* Features и Examples */
-
-
-/* team */
-
-/*.section-team {
-    background-color: #F5F4FA;
-} */
 
 
 /* Button */
@@ -217,7 +287,7 @@ button {
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
   
-    font-weight: 500;
+    font-weight: 400;
     font-size: 15px;
     line-height: 1.2;
     text-decoration: none;
@@ -235,13 +305,34 @@ button {
   
 /* footer */
 
-footer {
+.page-footer {
     background-color: #2F303A;;
     color: #ffffff;
-    
+
+    margin-left: auto;
+    margin-right: auto;
+  
+
+    padding-left: 15px;
+    padding-right: 15px;
+
     font-size: 14px;
     line-height: 1.14;
+    display: flex;
+    justify-content: space-around;
+
   }
+
+/* .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+*/
+
 
 .logo-footer {
   color: #ffffff;
@@ -254,13 +345,13 @@ footer {
 
 .address-description {
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.71;
 }
 
 .address-footer .link {
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.71;
     text-decoration: none;
 }
@@ -283,7 +374,7 @@ footer {
 }
 
 .portfolio-description {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -292,7 +383,7 @@ footer {
 }
 
 .portfolio-hover {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
