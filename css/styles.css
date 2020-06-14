@@ -106,6 +106,7 @@ body {
 .address-nav {
   display: flex;
   margin-left: auto;
+  font-style: normal;
 }
 
 .address-nav .item:not(:last-child) {
@@ -331,43 +332,47 @@ button {
   
 /* footer */
 
-.page-footer {
-    background-color: #2F303A;;
-    color: #ffffff;
-
-    margin-left: auto;
-    margin-right: auto;
+.footer {
+  background-color: #2F303A;;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+ 
   
+}
 
-    padding-left: 15px;
-    padding-right: 15px;
-
-    font-size: 14px;
-    line-height: 1.14;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-/* .container {
+.container-footer {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
-}
-*/
+  /* outline: 2px solid tomato; */
+  display: flex;
 
+
+  
+}
+
+.block1 {
+  display: block;
+  padding-top: 45px;
+} 
+  
 
 .logo-footer {
+  display: block;
   color: #ffffff;
   font-family: "Raleway", sans-serif;
-
   font-size: 22px;
   line-height: 1.18;
   text-decoration: none;
+  padding-bottom: 8px;
+  
 }  
+.address-footer {
+  font-style: normal;
+}
 
 .address-description {
     color: #ffffff;
@@ -380,8 +385,80 @@ button {
     font-weight: 400;
     line-height: 1.71;
     text-decoration: none;
+    
+}
+.block2 {
+  display: block;
+  padding-top: 57px;
+  padding-left: 69px;
+  padding-right: 94px;
 }
 
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-social .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.block3 {
+  display: block;
+  padding-top: 57px;
+}
+.block3-line {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.email-border {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  /* or 187% */
+
+  
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-top: 20px;
+  padding: 12px 18px;
+}
+
+.email-send {
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  align-items: center;
+  
+}
+
+.copy-rite {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  font-size: 12px;
+}
 
 /* Portfolio */
 
