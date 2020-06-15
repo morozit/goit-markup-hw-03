@@ -196,7 +196,7 @@ h1, h2, h3, p {
 }
 
 .feature-list .item:not(:last-child) {
-  margin-right: 30px; 
+  margin-right: 20px; 
 }
 
 .background-features {
@@ -233,7 +233,7 @@ h1, h2, h3, p {
 }  
 
 .produce-list .item:not(:last-child) {
-  margin-right: 30px; 
+  margin-right: 17px; 
 }
 
 .produce-title {
@@ -252,8 +252,8 @@ h1, h2, h3, p {
   justify-content: space-between;
 }
 
-.produce-list .item:not(:last-child) {
-  margin-right: 30px; 
+.team-list .item:not(:last-child) {
+  margin-right: 20px; 
 }
 
 .team-title {
