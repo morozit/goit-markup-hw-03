@@ -26,6 +26,8 @@ body {
 
 /* Утиилиты */
 
+
+
 .list {
   padding: 0;
   margin: 0;
@@ -51,10 +53,12 @@ body {
   padding-right: 15px;
   outline: 2px solid tomato;
 }
- h2, h3, p {
+
+h1, h2, h3, p {
   padding: 0;
   margin: 0;
-}
+} 
+
 
 .hidden {
   display: none;
@@ -164,14 +168,16 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
-.section .no-padding {
+.section.no-padding {
   padding-top: 0;
   padding-bottom: 0;
   /* margin-top: 94px; */
   margin-bottom: 94px;
 }
+
 .section-title {
     color: var(--text-title-color);
     font-weight: 700;
@@ -446,7 +452,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   align-items: center;
-  
+
 }
 
 .copy-rite {
