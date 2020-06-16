@@ -46,11 +46,11 @@ body {
 .container-portfolio {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 93px;
-  margin-bottom: 94px;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 93px;
+  padding-bottom: 94px;
   outline: 2px solid tomato;
 }
 
@@ -67,8 +67,13 @@ p {
 }
 
 .hidden {
-  display: none;
+  margin: 0px;
+  height: 0px;
+  color: transparent;
 }
+
+
+
 
 /* Page header */
 
@@ -159,7 +164,6 @@ p {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px; 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -623,7 +627,11 @@ button {
 }
 
 
-
+.hidden-p {
+  margin: 0px;
+  height: 0px;
+  color: transparent;
+}
 /* 
 .portfolio-card {
   display: flex;
