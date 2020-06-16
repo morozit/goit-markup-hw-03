@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
   font-weight: 400;
-  width: 270px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -367,11 +366,19 @@ button {
     border-radius: 4px;
     padding-left: 22px;
     padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    outline: none;
   }
   
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    outline: none;
   }
 
 
@@ -503,6 +510,7 @@ button {
 
 .email-send {
   align-items: center;
+  margin-left: 12px;
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -510,6 +518,9 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   align-items: center;
+  padding: 20px 30px 20px 30px;
+  border: none;
+  outline: none;
 
 }
 
