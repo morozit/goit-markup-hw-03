@@ -67,9 +67,10 @@ p {
 }
 
 .hidden {
-  margin: 0px;
+  /* margin: 0px;
   height: 0px;
-  color: transparent;
+  color: transparent; */
+  display: none;
 }
 
 
